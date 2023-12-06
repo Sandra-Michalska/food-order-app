@@ -1,5 +1,5 @@
 import classes from './Header.module.css';
-import logo from '../assets/logo.jpg';
+import logo from '../../assets/logo.jpg';
 
 function Header() {
     return (

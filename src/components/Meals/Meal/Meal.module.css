@@ -1,0 +1,14 @@
+.meal {
+    flex-grow: 1;
+    width: 32%;
+    text-align: center;
+    background: black;
+}
+
+.content {
+    padding: 0.7rem 0.7rem 1.8rem;
+}
+
+.image {
+    width: 100%;
+}
