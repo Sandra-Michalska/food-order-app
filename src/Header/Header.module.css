@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    letter-spacing: 0.2rem;
+}
+
+.logo {
+    max-width: 75px;
+    border-radius: 50%;
+    border: 3px solid #a6871b;
+}
+
+.logoText {
+    margin: 0;
+    padding-left: 0.9rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cartText {
+    margin-left: auto;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.cartText:hover {
+    /*  */
+}

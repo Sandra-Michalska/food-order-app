@@ -1,11 +1,11 @@
-import classes from './App.module.css';
+import Header from './Header/Header';
 
 function App() {
-  return (
-    <>
-      <h1 className={classes.heading}>Food order app</h1>
-    </>
-  )
+    return (
+        <>
+            <Header />
+        </>
+    )
 }
 
 export default App;
