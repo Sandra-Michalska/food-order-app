@@ -5,7 +5,7 @@ function Header() {
     return (
         <header className={classes.header}>
             <img src={logo} alt="Burger logo" className={classes.logo} />
-            <p className={classes.logoText}>TASTY FOOD</p>
+            <p className={classes.logoText}>Tasty food</p>
 
             <p className={classes.cartText}>Cart</p>
         </header>

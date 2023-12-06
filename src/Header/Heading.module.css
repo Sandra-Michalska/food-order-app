@@ -1,0 +1,14 @@
+.headingWrapper {
+    margin: 4rem 0 0;
+    text-align: center;
+}
+
+.h1 {
+    text-transform: uppercase;
+}
+
+.h2 {
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 1.3rem;
+}
