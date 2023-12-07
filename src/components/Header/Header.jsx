@@ -9,7 +9,7 @@ function Header() {
             <p className={classes.logoText}>Tasty food</p>
 
             <nav className={classes.nav}>
-                <Button textOnly>Cart</Button>
+                <Button className="font-big" textOnly>Cart</Button>
             </nav>
         </header>
     )

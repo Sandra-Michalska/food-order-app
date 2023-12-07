@@ -14,7 +14,11 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background-image: linear-gradient(to bottom right, #432d1a, #c97c3a);
+    background-image: linear-gradient(to bottom right, #3b2817, #7f4e24);
     font-family: 'Raleway', sans-serif;
     color: var(--yellow);
+}
+
+.font-big {
+    font-size: 1.2rem;
 }

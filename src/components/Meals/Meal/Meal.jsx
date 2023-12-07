@@ -10,9 +10,9 @@ function Meal({ meal }) {
                 <div className={classes.content}>
                     <h3>{meal.name}</h3>
                     <p className={classes.price}>{currencyFormatter.format(meal.price)}</p>
-                    <p>{meal.description}</p>
+                    <p className={classes.description}>{meal.description}</p>
                 </div>
-                <p>
+                <p className={classes.buttonWrapper}>
                     <Button>Add to cart</Button>
                 </p>
             </article>
