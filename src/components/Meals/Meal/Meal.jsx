@@ -1,17 +1,20 @@
 import classes from './Meal.module.css';
-import meal from '../../../assets/logo.jpg';
 
-function Meal() {
+function Meal({ meal }) {
     return (
-        <div className={classes.meal}>
-            <img className={classes.image} src={meal} alt="meal 1" />
-            <div className={classes.content}>
-                <p>mniam mniam</p>
-                <p>price</p>
-                <p>description</p>
-                <button>Add to cart</button>
-            </div>
-        </div>
+        <li className={classes.meal}>
+            <article>
+                <img className={classes.image} src={`http://localhost:3000/${meal.image}`} alt={meal.name} />
+                <div className={classes.content}>
+                    <h3>{meal.name}</h3>
+                    <p>{meal.price}</p>
+                    <p>{meal.description}</p>
+                </div>
+                <p>
+                    <button>Add to cart</button>
+                </p>
+            </article>
+        </li>
     )
 }
 

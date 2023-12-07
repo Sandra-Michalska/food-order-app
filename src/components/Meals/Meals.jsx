@@ -1,11 +1,29 @@
+import { useState, useEffect } from 'react';
 import classes from './Meals.module.css';
 import Meal from './Meal/Meal';
 
 function Meals() {
+    const [loadedMeals, setLoadedMeals] = useState([]);
+
+    useEffect(() => {
+        async function fetchMeals() {
+            const response = await fetch('http://localhost:3000/meals');
+    
+            if(!response.ok) {
+                //
+            }
+    
+            const meals = await response.json();
+            setLoadedMeals(meals);
+        }
+
+        fetchMeals();
+    }, []);
+
     return (
-        <div className={classes.meals}>
-            {[1,2,3,4,5,6,7].map((item, index)=> <Meal key={index}/>)}
-        </div>
+        <ul className={classes.meals}>
+            {loadedMeals.map(meal => <Meal key={meal.id} meal={meal} />)}
+        </ul>
     )
 }
 
