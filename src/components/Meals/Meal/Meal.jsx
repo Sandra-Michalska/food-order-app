@@ -1,3 +1,4 @@
+import { currencyFormatter } from '../../../utils/formatting.js'; 
 import classes from './Meal.module.css';
 
 function Meal({ meal }) {
@@ -7,7 +8,7 @@ function Meal({ meal }) {
                 <img className={classes.image} src={`http://localhost:3000/${meal.image}`} alt={meal.name} />
                 <div className={classes.content}>
                     <h3>{meal.name}</h3>
-                    <p>{meal.price}</p>
+                    <p>{currencyFormatter.format(meal.price)}</p>
                     <p>{meal.description}</p>
                 </div>
                 <p>
