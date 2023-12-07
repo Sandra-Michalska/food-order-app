@@ -8,7 +8,7 @@
 }
 
 .logo {
-    max-width: 75px;
+    max-width: 70px;
     border-radius: 50%;
     border: 3px solid var(--yellow);
 }
@@ -19,14 +19,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
-.cartText {
+.nav {
     margin-left: auto;
-    padding: 0.5rem;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
-.cartText:hover {
-    /*  */
+
+.button {
+    font-size: 1.2rem;
 }

@@ -1,4 +1,5 @@
 import classes from './Header.module.css';
+import Button from '../UI/Button/Button';
 import logo from '../../assets/logo.jpg';
 
 function Header() {
@@ -7,7 +8,9 @@ function Header() {
             <img src={logo} alt="Burger logo" className={classes.logo} />
             <p className={classes.logoText}>Tasty food</p>
 
-            <p className={classes.cartText}>Cart</p>
+            <nav className={classes.nav}>
+                <Button textOnly>Cart</Button>
+            </nav>
         </header>
     )
 }

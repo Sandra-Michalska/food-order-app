@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Lato:wght@400;700&display=swap');
 
 :root {
-    --yellow: #a6871b;
+    --black: #0e0e0e;
+    --white: #e5e0d6;
+    --yellow: #c8a012;
+    --orange: #c5831f;
 }
 
 * {
@@ -11,8 +14,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background: #372b2b;
+    background-image: linear-gradient(to bottom right, #432d1a, #c97c3a);
     font-family: 'Raleway', sans-serif;
     color: var(--yellow);
-    letter-spacing: 0.2rem;
 }
