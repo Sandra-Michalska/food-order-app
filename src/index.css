@@ -3,7 +3,7 @@
 :root {
     --black: #0e0e0e;
     --white: #e5e0d6;
-    --yellow: #c8a012;
+    --yellow: #d8ae16;
     --orange: #c5831f;
 }
 
@@ -14,7 +14,7 @@
 body {
     min-height: 100vh;
     margin: 0;
-    background-image: linear-gradient(to bottom right, #3b2817, #7f4e24);
+    background-image: linear-gradient(to bottom right, #3b2817, #714b2b);
     font-family: 'Raleway', sans-serif;
     color: var(--yellow);
 }
