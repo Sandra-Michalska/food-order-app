@@ -38,7 +38,9 @@ function Cart({}) {
             <p className={classes.totalPrice}>Total price: {currencyFormatter.format(totalPrice)}</p>
             <p className={classes.modalActions}>
                 <Button onClick={handleCloseCart} textOnly>Close</Button>
-                <Button onClick={handleCloseCart}>Go to checkout</Button>
+                {cartContext.items.length > 0 && (
+                    <Button onClick={handleCloseCart}>Go to checkout</Button>
+                )}
             </p>
         </Modal>
     );
